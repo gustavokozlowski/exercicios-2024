@@ -1,11 +1,14 @@
-h2{
-  color: black;
-}
-
 .container__app{
   display: flex;
   height: 100vh;
   background-color: crimson;
-  align-items: center;
-  justify-content: center;
+
+}
+.container__app .content__app{
+  display: flex;
+  width: 98vw;
+  flex-direction: column;
+  min-height: fit-content;
+  background-color: #fff;
+
 }
