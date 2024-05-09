@@ -1,5 +1,6 @@
 type User = {
-  name: string,
+  image: string,
   email: string,
-  greetings: string;
 }
+
+export { User }
