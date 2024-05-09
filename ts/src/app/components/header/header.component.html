@@ -4,22 +4,33 @@
       <h2 class="apresentation__subtitle">
         Anais do Simpósio Latino Americano de Ciências de Alimentos
       </h2>
-      <h1>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1>
+      <h1 class="apresentation__title">
+        Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+      </h1>
       <h2 class="apresentation__subtitle">ISSN: 1234-5678</h2>
     </div>
-    <div class="header__btn">
-      <button class="btn__languages">
-        <img class="globe__img" src="" alt="globe image" />
-        <p class="btn__text">PT, BR</p>
-        <img class="dropdown_img" src="" alt="dropdown image" />
-      </button>
-    </div>
-    <div class="header__user-content">
-        <span class="user__information">
-          <p class="user__greetings">Bem vindo!</p>
-          <p class="user__email">alguem12@galoascience.com</p>
-        </span>
-        <img class="user__picture" src="" alt="user profile picture">
-    </div>
+    <span>
+        <button class="header__btn">
+          <img class="globe__img" src="{{ img.globe }}" alt="globe image" />
+          <p class="btn__text">PT, BR</p>
+          <img
+            class="dropdown__img"
+            src="{{ img.dropdown }}"
+            alt="dropdown image"
+          />
+        </button>
+
+      <div class="header__user-content">
+        <div class="user__information">
+          <p class="information__text greetings">Bem vindo!</p>
+          <p class="information__text">alguem12@galoascience.com</p>
+        </div>
+        <img
+          class="user__picture"
+          src="../../../assets/images/user-image.jpg"
+          alt="user profile picture"
+        />
+      </div>
+    </span>
   </main>
 </header>
