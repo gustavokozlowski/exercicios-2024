@@ -1,1 +1,149 @@
-<p>home works!</p>
+<app-header></app-header>
+<main class="container__home">
+  <div class="content__home">
+    <section class="section__topic">
+      <div class="topic__intro">
+        <h2 class="title">
+          Análise sensorial de preparações funcionais desenvolvidas para
+          escolares entre 09 e 15 anos, do município de Campinas/SP
+        </h2>
+        <img class="topic__video" src="{{ video }}" alt="video Beatriz Melo" />
+      </div>
+      <div class="topic__details">
+        <span>
+          <button class="btn-download">
+            <img src="{{ btn.download }}" alt="icon-download" />
+            Download
+          </button>
+          <button class="btn-icon">
+            <img src="{{ btn.fav }}" alt="icon-fav" />
+          </button>
+          <button class="btn-icon">
+            <img src="{{ btn.doi }}" alt="icon-doi" />
+          </button>
+        </span>
+        <h3 class="details__title">Como citar esse trabalho?</h3>
+        <div class="details__container">
+          <header class="details__header">
+            <h2>Detalhes</h2>
+          </header>
+          <div class="details__content">
+            <ul class="details__list">
+              <li class="list__item">
+                Tipo de Apresentação: <strong> Pôster </strong>
+              </li>
+              <li class="list__item">
+                Eixo temático: <strong> Alimentação e saúde (AS) </strong>
+              </li>
+              <li class="list__item">
+                Palavras-chaves:
+                <strong> Alimentos funcionais, alimentação escolar. </strong>
+              </li>
+            </ul>
+
+            <ul class="autors__list">
+              <li class="list__title">Autores:</li>
+              <li class="list__item">Galileo Galilei¹</li>
+              <li class="list__item">Berta Lange de Morretes²</li>
+              <li class="list__item">Isaac Newton³</li>
+              <li class="list__item">Cesar Lattes¹</li>
+              <li class="list__item">Stephen Hawking⁴</li>
+            </ul>
+
+            <ul class="references__list">
+              <li class="references__item">
+                ¹Universidade Estadual de Campinas
+              </li>
+              <li class="references__item">²Universidade de São Paulo</li>
+              <li class="references__item">
+                ³Instituto Nacional de Pesquisas Espaciais
+              </li>
+              <li class="references__item">
+                ⁴Universidade Federal do Rio de Janeiro
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__resume">
+      <div class="resume__container">
+        <header class="resume__header">
+          <h2 class="resume__title">Resumo</h2>
+        </header>
+        <div class="resume__content">
+          <span *ngIf="show === false; else openMore" id="less">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus
+              felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce
+              auctor eros sed magna ultricies gravida. Etiam aliquam dictum
+              nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi
+              tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci
+              id leo condimentum lobortis et non lorem. Sed id nisl metus.
+              Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
+              vestibulum Phasellus condimentum orci id leo condimentum lobortis
+              et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in
+              sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam
+              dictum nisl, vel aliquet enim accumsan sit ametl accumsant...
+              <span (click)="handleShow()" class="btn-show-more">ver mais</span>
+            </p>
+          </span>
+          <ng-template #openMore>
+            <span id="more">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus vitae turpis auctor, mollis felis ut, commodo turpis.
+                Phasellus felis mauris, egestas eget cursus et, iaculis quis
+                lacus. Fusce auctor eros sed magna ultricies gravida. Etiam
+                aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec
+                finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus
+                condimentum orci id leo condimentum lobortis et non lorem. Sed
+                id nisl metus. Quisque sollicitudin ligula in sapien
+                scelerisque, ac gravida eros vestibulum.
+              </p>
+
+              <p>
+                Fusce vitae luctus dui. Donec id euismod mauris, in volutpat
+                urna. Proin dapibus consequat feugiat. Proin dictum justo arcu,
+                quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut
+                faucibus mauris sodales id. Aliquam erat volutpat. Maecenas
+                dolor enim, tincidunt id elit non, suscipit interdum turpis.
+                Etiam finibus urna libero, eget interdum eros volutpat
+                ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis
+                diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non,
+                ornare enim. Etiam in laoreet odio.
+              </p>
+
+              <p>
+                Nam eget tristique elit, at fermentum tellus. Mauris scelerisque
+                ligula id eleifend feugiat. Donec eleifend vehicula sem nec
+                dapibus. Integer scelerisque neque dui, in lacinia erat molestie
+                eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh,
+                dignissim quis purus semper, efficitur facilisis turpis.
+                Praesent blandit elementum ultricies. Aliquam sit amet enim sit
+                amet nulla pulvinar lobortis consectetur non odio. Phasellus at
+                lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam
+                eu scelerisque orci. Quisque sagittis, mi vitae pharetra
+                iaculis, orci elit eleifend massa, eu posuere mauris odio id
+                odio. Morbi eu libero luctus, consectetur lorem vel, interdum
+                sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+              </p>
+
+              <p>
+                Praesent velit dolor, dignissim sed quam ac, efficitur porta
+                justo. Pellentesque porta pharetra felis ut hendrerit. Nulla
+                facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam.
+                Maecenas dapibus luctus dolor at viverra. Duis nec fringilla
+                libero. Duis risus nibh, viverra ac orci nec, iaculis dictum
+                sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec
+                varius ipsum purus, ut vehicula purus placerat vitae. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </span>
+          </ng-template>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
