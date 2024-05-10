@@ -2,7 +2,7 @@
 @import '../../../assets/scss/variables/fonts';
 
 .aside__container {
-  height: 100vh;
+  height: 222vh;
   width: 15vw;
   background-color: $white-color;
   color: $white-color;
@@ -25,8 +25,9 @@
 
 
 .aside__content .aside__menu {
-
-  height: 100vh;
+  
+  // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+ 
   background: $primary-rgb-color;
   color: $default-rgb-color;
   text-align: left;
