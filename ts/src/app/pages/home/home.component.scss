@@ -9,6 +9,7 @@
   align-items: center;
   width: 90%;
   min-height: 100vh;
+  
 }
 
 .container__home .content__home {
@@ -17,6 +18,9 @@
   width: 95%;
   min-height: 100vh;
   box-sizing: content-box;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -207,7 +211,7 @@
 //SECTION RESUME
 
 .content__home .section__resume {
-  height: 100vh;
+  height: fit-content;
   flex-direction: column;
   display: flex;
 }
